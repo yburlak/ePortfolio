@@ -2,19 +2,27 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Introduction
+_My name is Yana Burlak, I'm and SNHU student working on ePortfolio. Here I'll show case my work in several enchansmnets divided in three distict phases: Software Design and Engineering, Algorithms and Data Structures and Databases._,
 
-[Link to Code Review Video](./another-page.html).
+The original project that I will be improving is **PetBag Boarding and Grooming System**. It was part of IT-145 Introduction to Scripting developed in Java Programming language. 
 
-There should be whitespace between paragraphs.
+Please follow the YouTube video link to see shortcommings of the code that was able to indentify:
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+[Code Review video link](./another-page.html).
 
 ```
-ARTIFACT
+ORIGINAL SYSTEM
 ```
 
-# Phase 1
+As you can see PetBag application was the prompt based system, asking user series of question before accepting pet into the facility
+
+
+```
+ARTIFACTS
+```
+
+## Phase 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
@@ -24,7 +32,7 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-### Phase 3
+## Phase 3
 
 ```js
 // Javascript code with syntax highlighting.
