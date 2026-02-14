@@ -13,8 +13,9 @@ Please follow the YouTube video link to see shortcommings of the code that was a
 [Code Review video link](./another-page.html).
 
 ```
-ORIGINAL SYSTEM VIEW
+ORIGINAL CODE & USER VIEW
 ```
+[Original java file](./another-page.html).
 
 As you can see PetBag application was the prompt based system, asking user series of question before accepting pet into the facility
 
