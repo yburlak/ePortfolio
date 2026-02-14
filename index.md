@@ -50,7 +50,7 @@ PetBag Application included following elements to make navigation intuitive and 
 >
 > I inroduces lists for dogs weight and prising, where as original code would charge flat fee reardless of the size of the dog. 
 
-```
+```js
 # Python code for pricing tiers via list data structures
 class BoardingService:
     TOTAL_DOG_SPACES = 30
@@ -71,7 +71,7 @@ class BoardingService:
 ```
 I created functions that would communicate with database to get available spaces:
 
-```
+```js
 # Python and SQL script to get occupancy from the db by counting pets with no check-out date
     @staticmethod
     def get_occupied_spaces(db):
