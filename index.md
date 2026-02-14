@@ -15,11 +15,11 @@ Please follow the YouTube video link to see shortcommings of the code that was a
 ```
 ORIGINAL CODE & USER VIEW
 ```
-[Java File](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
+Original PetBag Application was the prompt based system, asking user series of questions before accepting pet into the facility:
 
 ![Prompt_Based_UI](images/PetBag_original_prompt.PNG)
 
-As you can see PetBag application was the prompt based system, asking user series of question before accepting pet into the facility
+[Original Java Code](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
 
 
 ```
