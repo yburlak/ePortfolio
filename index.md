@@ -92,11 +92,11 @@ I created functions that would communicate with database to get available spaces
 ```
 And finally, reporting tab was completed at this stage of the development, here is the sample of generated rort:
 
-![PetBag_Tkinter_UI](images/Pet_Bag_reports_scrn.png)
+![PetBag_Tkinter_UI](images/Pet_Bag_revenue_scrn.png)
 
 ### Phase Three: Databases
 
-> The final phase encluded rational database named pet_bag_db. Here is the link to  [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
+> The final phase encluded rational database named pet_bag_db. Here is the link to  [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/PetBag UML class.pdf).
 > 
 > It had following elements:
 *   Customer table
