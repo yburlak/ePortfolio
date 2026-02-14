@@ -69,7 +69,7 @@ class BoardingService:
 ```
 I created functions that would communicate with database to get available spaces:
 
-```sql
+```python
 # get occupancy from the db by counting pets with no check-out date
     @staticmethod
     def get_occupied_spaces(db):
