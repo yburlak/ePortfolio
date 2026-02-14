@@ -15,7 +15,9 @@ Please follow the YouTube video link to see shortcommings of the code that was a
 ```
 ORIGINAL CODE & USER VIEW
 ```
-[Original java file](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
+[Java File](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
+
+![Prompt_Based_UI](https://guides.github.com/activities/hello-world/branching.png)
 
 As you can see PetBag application was the prompt based system, asking user series of question before accepting pet into the facility
 
