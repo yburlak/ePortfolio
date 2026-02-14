@@ -12,7 +12,7 @@ Please follow the YouTube video link to see shortcommings of the code that was a
 [Code Review video link](./another-page.html).
 
 ```
-ORIGINAL SYSTEM
+ORIGINAL SYSTEM VIEW
 ```
 
 As you can see PetBag application was the prompt based system, asking user series of question before accepting pet into the facility
