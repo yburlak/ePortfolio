@@ -17,7 +17,7 @@ ORIGINAL CODE & USER VIEW
 ```
 Original PetBag Application was the prompt based system, asking user series of questions before accepting pet into the facility:
 
- :paperclip: ![Prompt_Based_UI](images/PetBag_original_prompt.PNG)
+![Prompt_Based_UI](images/PetBag_original_prompt.PNG)
 
 [Original Java Code](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
 
