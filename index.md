@@ -26,17 +26,21 @@ Original PetBag Application was the prompt based system, asking user series of q
 ARTIFACTS
 ```
 
-## Phase 1
+## Phase One: Software Design and Engineering
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+The main goal for this enhansment phase was to demostrate my ability to transfer code from one programming language to another along with creating intreactive user interface. I went ahead and created persistant data structure via mySQL workbench to support UI functinalites, but it this stage I was far from implementing everything I wanted to incllude to make appliction fully meet needs of small bussness in checkingin/checkingout pets and produce reporting.
+Below is UI of the system that was created with help of Tkinter and Phython programming language:
 
-## Phase 2
+![PetBag_Tkinter_UI](images/Pet_Bag_main_scrn.png)
+
+
+## Phase Two: Algorithms and Data Structures
 
 > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-## Phase 3
+## Phase Three: Databases
 
 ```js
 // Javascript code with syntax highlighting.
@@ -53,7 +57,7 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### Header 4
+### Header 4
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
