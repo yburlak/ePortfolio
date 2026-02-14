@@ -54,14 +54,12 @@ PetBag Application included following elements to make navigation intuitive and 
 # pricing tiers via list data structures
 class BoardingService:
     TOTAL_DOG_SPACES = 30
-    TOTAL_CAT_SPACES = 12
-    
+    TOTAL_CAT_SPACES = 12   
     # boarding prices per day
     BOARDING_PRICES = {
         'dog': 30,
         'cat': 25
-    }
-    
+    }  
     # grooming price tiers by weight for dogs
     GROOMING_PRICES = {
         'small': {'min': 2, 'max': 20, 'price': 50},
@@ -71,7 +69,7 @@ class BoardingService:
 ```
 I created functions that would communicate with database to get available spaces:
 
-```phython
+```sql
 # get occupancy from the db by counting pets with no check-out date
     @staticmethod
     def get_occupied_spaces(db):
