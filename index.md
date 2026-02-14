@@ -17,7 +17,7 @@ ORIGINAL CODE & USER VIEW
 ```
 [Java File](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
 
-![Prompt_Based_UI](images/Pet_Bag_Original_code.png)
+![Prompt_Based_UI](images/Pet_Bag_Original_code.PNG)
 
 As you can see PetBag application was the prompt based system, asking user series of question before accepting pet into the facility
 
