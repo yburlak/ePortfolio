@@ -47,7 +47,7 @@ PetBag Application included following elements to make navigation intuitive and 
 ### Phase Two: Algorithms and Data Structures
 
 > In this enhansment phase, I concentrated on comprehansive calculations of grooming services, long with space availblity tracking and reporting.
->
+>I had refactored the application to MVC standards with cerapations of concerns, where each part was responsible for only task that it had at hand.
 > I inroduces lists for dogs weight and prising, where as original code would charge flat fee reardless of the size of the dog. 
 
 ```python
@@ -96,88 +96,37 @@ And finally, reporting tab was completed at this stage of the development, here 
 
 ### Phase Three: Databases
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+> The final phase encluded rational database named pet_bag_db. Here is the link to  [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
+> 
+> It had following elements:
+*   Customer table
+*   Pet table
+*   Boarding table
+*   Grooming table
+*   Users table
+
+Below is SQl script for creating boarding table:
+```sql
+CREATE TABLE IF NOT EXISTS Boarding (
+                boarding_id INT AUTO_INCREMENT PRIMARY KEY,
+                pet_id INT NOT NULL,
+                check_in DATE NOT NULL,
+                check_out DATE,
+                days_stay INT NOT NULL,
+                amount_due DECIMAL(10,2) NOT NULL,
+                grooming_requested BOOLEAN DEFAULT FALSE,
+                FOREIGN KEY (pet_id) REFERENCES Pet(pet_id)
+                ON DELETE CASCADE
 ```
+Application once again was refactored to support  cascade delition of records in DB, and authentification functionalities via environment variable–based authentication using a .env file and config.py. To support application security and authorized access. Thouth thedevelopment process I had gradually implemnted approprte CRUD opeartions to support use persistent data structures. I developed login Window to support athorizdd access to applications, I haded password via SHA-256 and created 30 minutes timeout for each login session.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Bellow is user login screen:
 
-### Header 4
+![Login_Tkinter_UI](images/Pet_Bag_login_scrn.png)
 
+Overall standards for security were met and inpmented via imput validation, password hashing and use of environmental valriables to db connection.  At this stage I perfomed testing from user perspective and appliction perfomed well
 
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
+The end.
 ```
