@@ -92,7 +92,7 @@ I created functions that would communicate with database to get available spaces
 ```
 And finally, reporting tab was completed at this stage of the development, here is the sample of generated rort:
 
-![PetBag_Tkinter_UI](images/Pet_Bag_revenue_scrn.png)
+![PetBag_Tkinter_UI](images/Pet_Bag_revenue_scrn.PNG)
 
 ### Phase Three: Databases
 
