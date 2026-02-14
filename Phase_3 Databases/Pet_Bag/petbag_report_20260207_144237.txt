@@ -1,0 +1,30 @@
+OCCUPANCY REPORT
+============================================================
+Report Period: 2026-01-08 to 2026-02-07 (30 days)
+Generated: 2026-02-07 14:41:32
+============================================================
+
+CURRENT OCCUPANCY STATUS
+----------------------------------------
+Dogs: 2/30 spaces (6.7% occupied)
+Cats: 1/12 spaces (8.3% occupied)
+Total: 3/42 spaces (7.1% occupied)
+Average Stay Duration: 3.0 days
+
+DAILY OCCUPANCY BREAKDOWN
+------------------------------------------------------------
+Date         Total    Dogs     Cats     Avg Stay  
+------------------------------------------------------------
+2026-02-07   2        1        1        3.0       
+2026-01-31   1        1        0        3.0       
+------------------------------------------------------------
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Boardings: 3
+Average Daily Boardings: 1.5
+Dog Boardings: 2 (66.7%)
+Cat Boardings: 1 (33.3%)
+
+Peak Day: 2026-02-07 (2 boardings)
+
