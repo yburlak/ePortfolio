@@ -8,6 +8,9 @@ _My name is Yana Burlak, I'm and SNHU student working on ePortfolio. Here I'll s
 
 The original project that I will be improving is **PetBag Boarding and Grooming System**. It was part of IT-145 Introduction to Scripting developed in Java Programming language. 
 
+```
+CODE REVIEW
+```
 Please follow the YouTube video link to see shortcommings of the code that was able to indentify:
 
 [Code Review link](./another-page.html).
@@ -20,7 +23,6 @@ Original PetBag Application was the prompt based system, asking user series of q
 ![Prompt_Based_UI](images/PetBag_original_prompt.PNG)
 
 [Original Java Code](https://github.com/yburlak/ePortfolio/blob/master/Pet.java).
-
 
 ```
 ARTIFACTS
@@ -97,7 +99,7 @@ And finally, reporting tab was completed at this stage of the development, here 
 ### Phase Three: Databases
 
 > The final phase encluded rational database named pet_bag_db.
-> Here is the link to  [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/PetBag_UML_class.pdf).
+> Here is the link to [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/PetBag_UML_class.pdf).
 > 
 > It had following elements:
 *   Customer table
@@ -129,5 +131,5 @@ Overall standards for security were met and inpmented via imput validation, pass
 
 
 ```
-The end.
+THE END.
 ```
