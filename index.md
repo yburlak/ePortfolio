@@ -96,7 +96,8 @@ And finally, reporting tab was completed at this stage of the development, here 
 
 ### Phase Three: Databases
 
-> The final phase encluded rational database named pet_bag_db. Here is the link to  [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/PetBag UML class.pdf).
+> The final phase encluded rational database named pet_bag_db.
+> Here is the link to  [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/PetBag_UML_class.pdf).
 > 
 > It had following elements:
 *   Customer table
