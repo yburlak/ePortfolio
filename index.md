@@ -277,7 +277,8 @@ Multiple security measures were adressed in this enhancement phase:
 
 Overall, security standards were met, and testing from a user perspective showed the application performed well. 
 
->This project was an excellent learning experience: I transformed a simple Java console program into a full‑stack Python application with a GUI, relational database, and authentication. I applied skills in software design, algorithms, and database management, and gained hands-on experience with language migration, MVC architecture, dynamic pricing, reporting, and input validation. The final product is fully functional and could be confidently used by a small pet boarding business.
+## Conclusion
+>This capstone project was an excellent learning experience: I transformed a simple Java console program into a full‑stack Python application with a GUI, relational database, and authentication. I applied skills in software design, algorithms, and database management, and gained hands-on experience with language migration, MVC architecture, dynamic pricing, reporting, and input validation. The final product is fully functional and could be confidently used by a small pet boarding business.
 
 ```
 THE END.
