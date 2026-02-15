@@ -220,7 +220,7 @@ To document the database schema and relationships, I created a UML class diagram
 
 [UML Class Diagram](https://github.com/yburlak/ePortfolio/blob/master/PetBag_UML_class.pdf).
 
-### Adding the Users Table
+### Users Table
 
 To support authentication, I added a Users table to the **pet_bag_db**
 
