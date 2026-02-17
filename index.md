@@ -73,7 +73,7 @@ The Treeview widget was perfect for displaying lists of customers and pets, and 
 
 #### Basic Database Setup
 
-I designed a rational database named **pet_bag_db** with four tables (Users table would be created later): 
+I designed a relational database named **pet_bag_db** with four tables (Users table would be created later): 
  - Customer,
  - Pet, 
  - Boarding,  
@@ -182,7 +182,7 @@ This real‑time calculation ensures users always see accurate capacity on the d
 
 #### Check-In & Check-Out
 
-At the core of PetBag are two essential workflows: checking pets in and checking them out. I focused on making these processes clear and efficient because they directly impact space availability, revenue, and the data used for reporting. The dialogs I designed guide staff through each step, validate inputs, and provide immediate feedback. Everything else—customer records, pet management, and reports—supports or builds upon these core events. By ensuring these workflows are intuitive and reliable, I created a system that works smoothly in a busy boarding environment.
+At the core of PetBag Boarding System are two essential workflows: checking pets in and checking them out. I focused on making these processes clear and efficient because they directly impact space availability, revenue, and the data used for reporting. The dialogs I designed guide staff through each step, validate inputs, and provide immediate feedback. Everything else—customer records, pet management, and reports—supports or builds upon these core events. By ensuring these workflows are intuitive and reliable, I created a system that works smoothly in a busy boarding environment.
 
 When the user clicks "Check‑In" on the Home tab, a dialog appears with fields for owner information, pet details, and stay preferences. The system validates every input, checks for available space, calculates charges (including grooming if requested), and creates the necessary database records. A success message summarizes the charges, and the dashboard updates in real time.
 
@@ -281,7 +281,7 @@ def authenticate_user(db, username, password):
 The login_window.py script collects user credentials and calls the authentication method. Once login is successful, the user object is passed to the main application, which opens the main window. From there, the user can manage all tasks, including checking in pets, ending stays, generating reports, and modifying or deleting records.
 
 #### Security Measures
-Multiple security measures were adressed in this enhancement phase:
+Multiple security measures were addressed in this enhancement phase:
 - Environment Variables: Database credentials are stored in .env and excluded from version control.
 - Parameterized Queries: All SQL uses placeholders, preventing SQL injection.
 - Input Validation: All user inputs are validated before use.
