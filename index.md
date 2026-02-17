@@ -42,7 +42,7 @@ Screenshot of the PetBag Boarding & Grooming system’s GUI, built using Python 
 
 ![PetBag_Tkinter_UI](images/Pet_Bag_main_scrn.png)
 
-### Programming Language
+#### Programming Language
 
 I chose Python because of its rich ecosystem (Tkinter for GUI, mysql‑connector for database) and its readability, perfect for a project that would grow over time. Plus, Python's dynamic nature made it easy to prototype and refactor. 
 
