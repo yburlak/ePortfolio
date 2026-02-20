@@ -17,7 +17,7 @@ CODE REVIEW
 ```
 Before starting the enhancements, I recorded a code review of the original Java application. In the video, I discussed its main limitations, including the lack of persistent storage, flat grooming pricing, no graphical user interface, and minimal error handling. You can watch the review here:
 
-[![Code Review link](https://img.youtube.com/vi/4wROzd2OEhM/0.jpg)](https://youtu.be/4wROzd2OEhM)
+[Code Review Link](https://youtu.be/4wROzd2OEhM)
 
 ```
 ORIGINAL CODE & USER VIEW
