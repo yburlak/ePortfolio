@@ -185,7 +185,7 @@ Available spaces are then calculated by subtracting these occupied counts from t
 
 #### Check-In & Check-Out
 
-At the core of PetBag Boarding System are two essential workflows: checking pets in and checking them out. I focused on making these processes clear and efficient because they directly impact space availability, revenue, and the data used for reporting. The dialogs I designed guide staff through each step, validate inputs, and provide immediate feedback. Everything else—customer records, pet management, and reports—supports or builds upon these core events. By ensuring these workflows are intuitive and reliable, I created a system that works smoothly in a busy boarding environment.
+At the core of PetBag Boarding System are two essential workflows: checking pets in and checking them out. I focused on making these processes clear and efficient because they directly impact space availability, revenue, and the data used for reporting. The dialogs I designed guide staff through each step, validate inputs, and provide immediate feedback. Everything else customer records, pet management, and reports supports or builds upon these core events. By ensuring these workflows are intuitive and reliable, I created a system that works smoothly in a busy boarding environment.
 
 When the user clicks "Check‑In" on the Home tab, a dialog appears with fields for owner information, pet details, and stay preferences. The system validates every input, checks for available space, calculates charges (including grooming if requested), and creates the necessary database records. A success message summarizes the charges, and the dashboard updates in real time.
 
