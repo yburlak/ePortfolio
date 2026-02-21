@@ -238,7 +238,7 @@ To document the database schema and relationships, I created a UML class diagram
 
 To support authentication, I added a Users table to the **pet_bag_db**.
 
-Below is the SQL script for creating the Users table::
+Below is the SQL script for creating the Users table:
 ```sql
 CREATE TABLE IF NOT EXISTS Users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
