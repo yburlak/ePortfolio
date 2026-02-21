@@ -6,12 +6,43 @@ layout: default
 ## Introduction
 Hello,
 
-_I’m Yana Burlak, a Computer Science student at SNHU. This ePortfolio presents my work enhancing the **PetBag Boarding and Grooming System** through three phases: Software Design and Engineering, Algorithms and Data Structures, and Databases. The original project began as a simple console-based Java program in IT-145 Introduction to Scripting. Throughout these phases, I transformed it into a full-featured, GUI-based application with persistent storage, more advanced business logic, and secure authentication._
+_I’m Yana Burlak, a Computer Science student at SNHU. This ePortfolio presents my work enhancing the **PetBag Boarding and Grooming System** through three phases: Software Design and Engineering, Algorithms and Data Structures, and Databases. The original project began as a simple console-based Java program in IT-145 Foundation in Application Development. Throughout these phases, I transformed it into a full-featured, GUI-based application with persistent storage, more advanced business logic, and secure authentication._
 
 _Each phase challenged me to revisit knowledge from previous courses and expand my understanding by learning new approaches and improving my development practices._
 
 _I selected this artifact for my ePortfolio because it represents a complete and meaningful project that demonstrates my ability to design and develop a full-stack application from start to finish. The PetBag Boarding System shows my growth as a developer, especially as the project evolved beyond basic functionality into a more secure and structured application._
 
+## Professional self-assessment 
+
+When I first started at Southern New Hampshire University, I honestly did not fully understand what earning a degree in computer science would demand from me. I saw it as an opportunity, but I didn't yet see the discipline, persistence, and long sleepless nights that would come with it. Three years later, after challenges, frustration and growth, I can confidently say that this journey shaped me both technically and personally.
+
+Online learning is often criticized for lacking interaction, and at times it can feel isolating. However, through weekly discussions, peer responses, and collaborative assignments, I still felt connected to a diverse community of students across the country. Those interactions helped me strengthen my communication skills and reminded me that software development is never just about code, it is about people working together to build something meaningful.
+
+Several courses had a lasting impact on me.
+
+CS-250 (Software Development Lifecycle) was the first course where I truly understood the importance of collaboration. Learning about Agile and Scrum showed me how structured teamwork leads to better outcomes. It changed the way I see development not as an individual task, but as a shared responsibility.
+
+CS-210 (Programming Languages) helped me appreciate the diversity of programming languages. I realized that as a developer, flexibility matters. There is rarely one "perfect" solution, and choosing the right tool for a specific problem requires both knowledge and judgment. This course also reinforced that writing code means writing it well, clean, efficient, and professional.
+
+CS-305 (Software Security) deeply influenced how I think about security. Before this course, I viewed security as an added feature. Now I understand it as a foundation. Learning about encryption, hashing, and secure communication made me realize how easily vulnerabilities can appear if security is treated as an afterthought.
+
+In CS-300 (Analysis and Design), I learned to slow down and think critically about algorithms and data structures. Instead of focusing only on whether something works, I began asking whether it works efficiently and optimally. That shift in thinking strengthened my analytical skills.
+
+CS-465 (Full Stack Development) brought everything together. It helped me see how front-end and back-end systems must work seamlessly to create a complete application. I especially enjoyed this course because it showed me that problem-solving in programming is creative. There are multiple paths to a solution, and growth comes from research, experimentation, and persistence.
+
+My Capstone project reflects these lessons.
+
+I demonstrated collaboration by designing an application that could realistically be used and maintained by multiple users or developers. I applied communication skills through clear documentation, consistent commenting, and an intuitive Tkinter interface that prioritizes user experience.
+
+From a technical perspective, I used algorithmic thinking to solve practical problems such as occupancy tracking and pricing calculations. I considered trade-offs between clarity, efficiency, and maintainability when making design decisions.
+
+I also applied industry-relevant tools and practices, including Python development, structured database design, and CRUD operations. Most importantly, I approached development with a security mindset, implementing input validation, user authentication, and secure database queries to prevent vulnerabilities like SQL injection.
+
+Looking back, I can see how much I have grown. I no longer approach projects just trying to make them work. I think about design choices, performance, security, and long-term maintainability. I understand that secure and thoughtful development is not optional, it is a responsibility.
+
+Overall, I believe I have met the program outcomes and, more importantly, developed the mindset of a professional ready to continue learning and improving in the field of computer science.
+
+This foundation prepared me for the technical work ahead. Below, you can watch my initial code review and explore how I transformed the **PetBag Application** through three enhancement phases
 ```
 CODE REVIEW
 ```
@@ -50,26 +81,8 @@ The application was designed with small business owners in mind. It runs as a st
 
 #### GUI with Tkinter
 
-I used Tkinter to create a tabbed interface (ttk.Notebook) with four main tabs: Home, Pets, Customers, and Reports. Each tab contains relevant widgets: Treeview for displaying data, Entry and Combobox for input, and Button for actions.
+I used Tkinter to create a tabbed interface (ttk.Notebook) with four main tabs: Home, Pets, Customers, and Reports. Each tab contains relevant widgets: Treeview for displaying data, Entry and Combobox for input, and Button for actions. The Treeview widget was perfect for displaying lists of customers and pets, and binding double‑click events allowed editing directly.
 
-Here's a snippet from views.py that creates the Pets tab:
-```python
-def create_pet_section(self, parent):
-    header_frame = tk.Frame(parent)
-    header_frame.pack(fill=tk.X, pady=(10, 10))
-    
-    tk.Label(header_frame, text="🐕", font=("Arial", 20)).pack(side=tk.LEFT, padx=(0, 10))
-    tk.Label(header_frame, text="Pet Management", font=("Arial", 24, "bold")).pack(side=tk.LEFT)
-    
-    button_frame = tk.Frame(parent)
-    button_frame.pack(fill=tk.X, padx=10, pady=10)
-    
-    tk.Button(button_frame, text="Add Pet", command=self.controllers.add_pet,
-              bg="#2196F3", fg="white", font=("Arial", 11)).pack(side=tk.LEFT, padx=(0, 10))
-    
-    # ... more buttons and Treeview setup
-```
-The Treeview widget was perfect for displaying lists of customers and pets, and binding double‑click events allowed editing directly.
 
 #### Basic Database Setup
 
@@ -168,17 +181,7 @@ def get_occupied_spaces(db):
         occupied[pet_type.lower()] = count
     return occupied
 ```
-Then boarding_service.py calculates available spaces:
-
-```python
-def get_available_spaces(db):
-    occupied = Pet.get_occupied_spaces(db)
-    return {
-        "dog_spaces": BoardingService.TOTAL_DOG_SPACES - occupied.get('dog', 0),
-        "cat_spaces": BoardingService.TOTAL_CAT_SPACES - occupied.get('cat', 0)
-    }
-```
-This real‑time calculation ensures users always see accurate capacity on the dashboard.
+Available spaces are then calculated by subtracting these occupied counts from the total capacity (e.g., dog_spaces = 30 - occupied['dog']). This real‑time calculation ensures users always see accurate capacity on the dashboard.
 
 #### Check-In & Check-Out
 
@@ -206,18 +209,16 @@ SELECT
     SUM(b.amount_due) as daily_revenue,
     SUM(CASE WHEN p.pet_type = 'dog' THEN b.amount_due ELSE 0 END) as dog_revenue,
     SUM(CASE WHEN p.pet_type = 'cat' THEN b.amount_due ELSE 0 END) as cat_revenue,
-    SUM(CASE WHEN b.grooming_requested = 1 AND p.pet_type = 'dog' THEN 1 ELSE 0 END) as grooming_count,
-    SUM(CASE WHEN g.price IS NOT NULL THEN g.price ELSE 0 END) as grooming_revenue
+    SUM(CASE WHEN b.grooming_requested = 1 THEN 1 ELSE 0 END) as grooming_count
+    -- (Grooming revenue from Grooming table omitted for brevity)
 FROM Boarding b
 JOIN Pet p ON b.pet_id = p.pet_id
-LEFT JOIN Grooming g ON b.boarding_id = g.boarding_id
 WHERE b.check_in BETWEEN %s AND %s
 GROUP BY DATE(b.check_in)
 ```
-This query uses conditional aggregation to separate dog and cat revenue, and grooming revenue. The results are then formatted into a readable text report.
+A similar CASE expression (combined with a JOIN to the Grooming table) calculates grooming revenue; the core technique of conditional aggregation is demonstrated above. This query separates dog revenue, cat revenue, and grooming requests using conditional aggregation. The results are then formatted into a readable text report.
 
 Below is a sample revenue report generated by the application:
-
 
 ![Sample Report](images/Pet_Bag_report_prnt.jpg)
 
