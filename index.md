@@ -284,9 +284,9 @@ The login_window.py script collects user credentials and calls the authenticatio
 #### Security Measures
 Multiple security measures were addressed in this enhancement phase:
 - Environment Variables: Database credentials are stored in .env and excluded from version control.
-- Parameterized Queries: All SQL uses placeholders, preventing SQL injection.
+- Parameterized Queries: SQL uses placeholders, preventing SQL injection.
 - Input Validation: All user inputs are validated before use.
-- Password Hashing: SHA‑256 (with plans to upgrade to bcrypt if this were production).
+- Password Hashing: SHA‑256.
 - Session Management: A SESSION_TIMEOUT constant is defined for future use.
 
 Overall, security standards were met, and testing from a user perspective showed the application performed well. 
