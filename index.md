@@ -10,7 +10,7 @@ _I’m Yana Burlak, a Computer Science student at SNHU. This ePortfolio presents
 
 _Each phase challenged me to revisit knowledge from previous courses and expand my understanding by learning new approaches and improving my development practices._
 
-_I selected this artifact for my ePortfolio because it represents a complete and meaningful project that demonstrates my ability to design and develop a full-stack application from start to finish. The PetBag Boarding System shows my growth as a developer, especially as the project evolved beyond basic functionality into a more secure and structured application._
+_I selected this artifact for my ePortfolio because it represents a complete and meaningful project that demonstrates my ability to design and develop a full-stack application from start to finish. The PetBag Boarding and Grooming System shows my growth as a developer, especially as the project evolved beyond basic functionality into a more secure and structured application._
 
 ## Professional self-assessment 
 
