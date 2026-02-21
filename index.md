@@ -14,7 +14,7 @@ _I selected this artifact for my ePortfolio because it represents a complete and
 
 ## Professional self-assessment 
 
-When I first started at Southern New Hampshire University, I honestly did not fully understand what earning a degree in computer science would demand from me. I saw it as an opportunity, but I didn't yet see the discipline, persistence, and long sleepless nights that would come with it. Three years later, after challenges, frustration and growth, I can confidently say that this journey shaped me both technically and personally.
+When I first started at Southern New Hampshire University, I honestly did not fully understand what earning a degree in computer science would demand from me. I saw it as an opportunity, but I didn't yet see the discipline, persistence, and long sleepless nights that would come with it. Three years later, after challenges, frustration, and growth, I can confidently say that this journey shaped me both technically and personally.
 
 Online learning is often criticized for lacking interaction, and at times it can feel isolating. However, through weekly discussions, peer responses, and collaborative assignments, I still felt connected to a diverse community of students across the country. Those interactions helped me strengthen my communication skills and reminded me that software development is never just about code, it is about people working together to build something meaningful.
 
@@ -236,9 +236,9 @@ To document the database schema and relationships, I created a UML class diagram
 
 #### Users Table
 
-To support authentication, I added a Users table to the **pet_bag_db**
+To support authentication, I added a Users table to the **pet_bag_db**.
 
-Below is SQL script for creating boarding table:
+Below is the SQL script for creating the Users table::
 ```sql
 CREATE TABLE IF NOT EXISTS Users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
